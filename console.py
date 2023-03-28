@@ -1,7 +1,22 @@
 #!/usr/bin/python3
 
 import cmd
-from classes import data_structure
+from os import getenv
+from classes.doubly_linked_list import LinkedList
+from classes.list import List
+
+def get_data_structure():
+    """
+    Obtaining the data structure of a environment variable
+    """
+    data_structure_type = getenv('DATA_STRUCTURE', 'list')
+    if data_structure_type.lower() == 'linkedlist':
+        return LinkedList()
+    else:
+        return List()
+
+data_structure = get_data_structure()
+data_structure.reload()
 
 
 class LIFO_FIFO_CONSOLE(cmd.Cmd):
