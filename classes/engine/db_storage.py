@@ -7,7 +7,7 @@ class DBStorage:
     The DBStorage class is used to save and load data from a database.
     """
     
-    def create_table(self, conn: sqlite3.connect):
+    def create_table(self, conn: sqlite3.connect.__class__):
         """
         Creates a table in the database with the name "data" and a single column "number".
 
@@ -17,7 +17,7 @@ class DBStorage:
         conn.execute('''CREATE TABLE IF NOT EXISTS data
                         (number INTEGER NOT NULL)''')
 
-    def connect(self) -> sqlite3.connect:
+    def connect(self) -> sqlite3.connect.__class__:
         """
         Creates a connection to the SQLite database 'database.db'
         """

@@ -137,8 +137,8 @@ class LIFO_FIFO_CONSOLE(cmd.Cmd):
         """
         This method saves the data structure and quits from the CLI.
         """
+        print("EOF detected. Saving data and quitting...")
         data_structure.save()
-        sys.__stdout__.write('\n')
         return True
 
     def cmdloop(self, intro=None):
