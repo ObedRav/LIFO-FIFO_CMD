@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 This code is responsible for initializing and configuring a data
 structure and a persistence mechanism based on environmental variables.
