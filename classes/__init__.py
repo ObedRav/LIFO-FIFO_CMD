@@ -6,9 +6,13 @@ structure and a persistence mechanism based on environmental variables.
 from os import getenv
 from .engine.file_storage import FileStorage
 from .engine.db_storage import DBStorage
+from typing import Union
 
 
-def get_storage():
+def get_storage() -> Union[FileStorage, DBStorage]:
+    """
+    Obtaining the storage type for the environment variable
+    """
     storage_type = getenv('STORAGE', 'file')
     if storage_type == 'database':
         return DBStorage()
@@ -16,5 +20,3 @@ def get_storage():
         return FileStorage()
 
 storage = get_storage()
-
-print(f"You're using {storage.__class__.__name__} as a persistence")
