@@ -1,4 +1,17 @@
 #!/usr/bin/python3
+"""
+Module Name: 
+file_storage
+
+Module Description:
+This module contains one class that manage the file storage
+
+Module Classes:
+- FileStorage
+
+Module Attributes:
+- None
+"""
 import json
 from os import path
 

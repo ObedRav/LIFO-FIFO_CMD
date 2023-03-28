@@ -1,7 +1,20 @@
 #!/usr/bin/python3
+"""
+Module Name: 
+doubly_linked_list
 
+Module Description:
+This module contains two class to manage a double linked list
 
-class Node():
+Module Classes:
+- Node
+- LinkedList
+
+Module Attributes:
+- None
+"""
+
+class Node:
     """
     Represents a node in a linked list
     """

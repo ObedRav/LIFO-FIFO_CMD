@@ -1,5 +1,17 @@
 #!usr/bin/python3
+"""
+Module Name: 
+list
 
+Module Description:
+This module contains one class which is a subclass of the built-in `list`
+
+Module Classes:
+- List(list)
+
+Module Attributes:
+- None
+"""
 
 class List(list):
     """

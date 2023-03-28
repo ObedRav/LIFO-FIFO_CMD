@@ -1,4 +1,17 @@
 #!usr/bin/python3
+"""
+Module Name: 
+db_storage
+
+Module Description:
+This module contains one class that manage the database
+
+Module Classes:
+- DBStorage
+
+Module Attributes:
+- None
+"""
 import sqlite3
 
 
