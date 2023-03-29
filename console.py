@@ -56,12 +56,11 @@ class LIFO_FIFO_CONSOLE(cmd.Cmd):
         This method adds an element to the top of the data structure.
         The argument 'args' is expected to contain the number to be added.
         If the argument is not an integer, an error message is displayed.
-        """
-        # destructuring the args and discarding the following fields
-        number, *_ = args
-
-        # Checking if can be parse to an integer
+        """   
         try:
+            # destructuring the args and discarding the following fields
+            number, *_ = args
+            # Checking if can be parse to an integer
             number = int(number)
         except ValueError:
             print("Invalid data, must be an integer")
@@ -75,11 +74,10 @@ class LIFO_FIFO_CONSOLE(cmd.Cmd):
         This method adds the top two member values of the data structure.
         If the argument is not an integer, an error message is displayed.
         """
-        # destructuring the args and discarding the following fields
-        number, *_ = args
-
-        # Checking if can be parse to an integer
         try:
+            # destructuring the args and discarding the following fields
+            number, *_ = args
+            # Checking if can be parse to an integer
             number = int(number)
         except ValueError:
             print("Invalid data, must be an integer")
@@ -137,7 +135,6 @@ class LIFO_FIFO_CONSOLE(cmd.Cmd):
         """
         This method saves the data structure and quits from the CLI.
         """
-        print("EOF detected. Saving data and quitting...")
         data_structure.save()
         return True
 
