@@ -82,7 +82,7 @@ This project supports the following opcodes:
 ## Usage :robot:
 
 <details open>
-<summary> <strong> Files </strong> </summary>
+<summary> <strong> Files :speech_balloon: </strong> </summary>
 
 Create a file with opcodes, for example:
 
@@ -118,7 +118,7 @@ $ cat someopcodes.txt | STORAGE="database" ./console.py
 </details>
 
 <details open>
-<summary> <strong> No-Interactive Mode </strong> </summary>
+<summary> <strong> No-Interactive Mode :speech_balloon: </strong> </summary>
 
 Pass opcodes to the console in non-interactive mode using the following command:
 
@@ -143,7 +143,7 @@ $ echo "pall" | STORAGE="database" ./console.py
 </details>
 
 <details open>
-<summary> <strong> Interactive Mode </strong> </summary>
+<summary> <strong> Interactive Mode :speech_balloon:</strong> </summary>
 
 Run the console with the desired environment variables to enter interactive mode, for example:
 
@@ -214,6 +214,14 @@ You're using List as a data_structure
 9
 (List)> quit
 ```
+
+## Clear :man_teacher:
+After testing and using the CLI, you can run:
+
+```
+./clear
+```
+To clear your environment space
 
 ## Bugs :bomb:
 If you find any bug, please, let us know.
